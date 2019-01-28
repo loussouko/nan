@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tourisme Ci</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width , initial-scale=1 , shrink-to-fit=no" />
+  <link rel="stylesheet" href="bootstrap-4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="icon" type="image/ico" href="images/1.ico">
+    <script src="bootstrap-4.2.1/js/popper.min.js"></script>
+    <script src="bootstrap-4.2.1/js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-4.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="fontawesome/js/all.js"></script>
+</head>
+<body style="padding-top: 60px;">
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-ligth bg-dark fixed-top">
+    <a class="navbar-brand text-warning"href="#"><i class="fa fa-paper-plane"></i> TOURISMECI</a>
+    <button class="navbar-toggler bg-light" data-toggle="collapse" data-target="#bouton">
+      <span class="navbar-toggler-icon bg-warning"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="bouton">
+        <ul class="navbar-nav">
+            <li class="nav-item "><a href="index.html" class="nav-link text-warning"><i class="fa fa-home mr-1"></i>ACCEUIL</a></li>
+            <li  class="nav-item "><a href="site_touristique.html" class="nav-link text-primary"><i class="fa fa-umbrella-beach mr-1"></i>SITE TOURISTIQUE</a></li>
+            <li  class="nav-item active"><a href="transport.html" class="nav-link text-warning"><i class="fa fa-car mr-1"></i>TRANSPORT</a></li>
+            <li  class="nav-item"><a href="contacts.html" class="nav-link text-warning"><i class="fa fa-phone fa-rotate-90 mr-1"></i>CONTACTS</a></li>
+        </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="col-12">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Acceuil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Site touristique</li>
+            </ol>
+        </nav>
+</div>
+
+<section class="container-fluid" style="background:url(images/riviere.jpg);">
+  <div class="row">
+    <div class="col-6 col-md-3 col-lg-3 ">
+     <div class="card">
+       <img src="images/abidjan_large.jpg" class="card-img-top img-fluid">
+       <div class="card-body">
+         <p class="card-text">ABIDJAN</p>
+         <button class=" btn btn-primary" data-toggle="modal" data-target="#abidjan">Visiter</button>
+       </div> 
+      </div>
+
+        <div class="modal" id="abidjan">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="h4 modal-title">RESERVATION</h1>
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="bg-warning rounded col-12 pb-2" action="site_touristique.html" method="post">
+                            <fieldset>
+                                <legend class="text-center">Abidjan</legend>
+                                <div class="form-group row">
+                                    <label for="nomA" class="col-form-label col-sm-3">NOM:</label>
+                                    <div class="col-sm-9">
+                                        <input type="name" name="nom" class="form-control" id="nomA">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="prenomA" class="col-form-label col-sm-3">PRENOM:</label>
+                                    <div class="col-sm-9">
+                                        <input type="name" name="prenom" class="form-control" id="prenomA">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label col-sm-3">SEXE</label>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" name="sexe" id="hommeA" class="custom-control-input">
+                                        <label class="custom-control-label" for="hommeA">Homme</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" name="sexe" id="femmeA" class="custom-control-input">
+                                        <label class="custom-control-label" for="femmeA">Femme</label>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="numeroA" class="col-form-label col-sm-3">CONTACTS:</label>
+                                    <div class="col-sm-9">
+                                        <input type="tel" name="numero" id="numeroA" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="modal-footer ">
+                                    <button type="submit" name="reserver" class="btn btn-success col-sm-3 offset-sm-3">reserver</button>
+                                    <button class="btn btn-danger col-sm-3 offset-sm-2 mr-2" data-dismiss="modal">fermer</button>
+                                </div>
+                            </fieldset>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+     </div>
+      <div class="col-6 col-md-3 col-lg-3 ">
+     <div class="card">
+       <img src="images/sanpedro_large.jpg" class="card-img-top img-fluid">
+       <div class="card-body">
+         <p class="card-text">SAN-PEDRO</p>
+         <button class=" btn btn-primary center-block" data-toggle="modal" data-target="#modal1" >Visiter</button>
+       </div> 
+      </div>
+          <div class="modal" id="modal1">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h1 class="h4 modal-title">RESERVATION</h1>
+                          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                      </div>
+                      <div class="modal-body">
+                          <form class="bg-warning rounded col-12 pb-2" action="site_touristique.html" method="post">
+                              <fieldset>
+                                  <legend class="text-center">San-Pedro</legend>
+                                  <div class="form-group row">
+                                      <label for="nom" class="col-form-label col-sm-3">NOM:</label>
+                                      <div class="col-sm-9">
+                                          <input type="name" name="nom" class="form-control" id="nom">
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label for="prenom" class="col-form-label col-sm-3">PRENOM:</label>
+                                      <div class="col-sm-9">
+                                          <input type="name" name="prenom" class="form-control" id="prenom">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="col-form-label col-sm-3">SEXE</label>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" name="sexe" id="homme" class="custom-control-input">
+                                          <label class="custom-control-label" for="homme">Homme</label>
+                                      </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" name="sexe" id="femme" class="custom-control-input">
+                                          <label class="custom-control-label" for="femme">Femme</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label for="numero" class="col-form-label col-sm-3">CONTACTS:</label>
+                                      <div class="col-sm-9">
+                                          <input type="tel" name="numero" id="numero" class="form-control">
+                                      </div>
+                                  </div>
+                              </fieldset>
+                              <div class="modal-footer">
+                                  <input type="submit" name="reserver" class="btn btn-success col-sm-3 offset-sm-3" value="reserver">
+                                  <button class="btn btn-danger col-sm-3 offset-sm-2" data-dismiss="modal">fermer</button>
+                              </div>
+                          </form>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+     </div>  
+     <div class="col-6  col-md-3  col-lg-3 mt-2 mt-md-0 mt-xl-0 mt-lg-0 ">
+     <div class="card">
+       <img src="images/poro_large.jpg" class="card-img-top img-fluid">
+       <div class="card-body">
+         <p class="card-text">PORO</p>
+         <button class=" btn btn-primary center-block" data-toggle="modal" data-target="#modal2" >Visiter</button>
+       </div> 
+      </div>
+
+         <div class="modal" id="modal2">
+             <div class="modal-dialog modal-dialog-centered">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h1 class="h4 modal-title">RESERVATION</h1>
+                         <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                     </div>
+                     <div class="modal-body">
+                         <form class="bg-warning rounded col-12 pb-2" action="site_touristique.html" method="post">
+                             <fieldset>
+                                 <legend class="text-center">Poro</legend>
+                                 <div class="form-group row">
+                                     <label for="nom2" class="col-form-label col-sm-3">NOM:</label>
+                                     <div class="col-sm-9">
+                                         <input type="name" name="nom" class="form-control" id="nom2">
+                                     </div>
+                                 </div>
+                                 <div class="form-group row">
+                                     <label for="prenom2" class="col-form-label col-sm-3">PRENOM:</label>
+                                     <div class="col-sm-9">
+                                         <input type="name" name="prenom" class="form-control" id="prenom2">
+                                     </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <label class="col-form-label col-sm-3">SEXE</label>
+                                     <div class="custom-control custom-radio custom-control-inline">
+                                         <input type="radio" name="sexe" id="homme2" class="custom-control-input">
+                                         <label class="custom-control-label" for="homme2">Homme</label>
+                                     </div>
+                                     <div class="custom-control custom-radio custom-control-inline">
+                                         <input type="radio" name="sexe" id="femme2" class="custom-control-input">
+                                         <label class="custom-control-label" for="femme2">Femme</label>
+                                     </div>
+                                 </div>
+                                 <div class="form-group row">
+                                     <label for="numero2" class="col-form-label col-sm-3">CONTACTS:</label>
+                                     <div class="col-sm-9">
+                                         <input type="tel" name="numero" id="numero2" class="form-control">
+                                     </div>
+                                 </div>
+                             </fieldset>
+                             <div class="modal-footer ">
+                                 <button type="submit" name="reserver" class="btn btn-success col-sm-3 offset-sm-3">reserver</button>
+                                 <button class="btn btn-danger col-sm-3 offset-sm-2 mr-2" data-dismiss="modal">fermer</button>
+                             </div>
+                         </form>
+                     </div>
+
+                 </div>
+             </div>
+         </div>
+     </div> 
+     <div class="col-6  col-md-3 col-lg-3 mt-2 mt-md-0 mt-xl-0 mt-lg-0">
+     <div class="card">
+       <img src="images/gontougo_large.jpg" class="card-img-top img-fluid">
+       <div class="card-body">
+         <p class="card-text">GONTOUGOU</p>
+         <button class=" btn btn-primary center-block" data-toggle="modal" data-target="#modal3" >Visiter</button>
+       </div> 
+      </div>
+         <div class="modal" id="modal3">
+             <div class="modal-dialog modal-dialog-centered">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h1 class="h4 modal-title">RESERVATION</h1>
+                         <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                     </div>
+                     <div class="modal-body">
+                         <form class="bg-warning rounded col-12 pb-2" action="site_touristique.html" method="post">
+                             <fieldset>
+                                 <legend class="text-center">Gontougou</legend>
+                                 <div class="form-group row">
+                                     <label for="nom3" class="col-form-label col-sm-3">NOM:</label>
+                                     <div class="col-sm-9">
+                                         <input type="name" name="nom" class="form-control" id="nom3">
+                                     </div>
+                                 </div>
+                                 <div class="form-group row">
+                                     <label for="prenom3" class="col-form-label col-sm-3">PRENOM:</label>
+                                     <div class="col-sm-9">
+                                         <input type="name" name="prenom" class="form-control" id="prenom3">
+                                     </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <label class="col-form-label col-sm-3">SEXE</label>
+                                     <div class="custom-control custom-radio custom-control-inline">
+                                         <input type="radio" name="sexe" id="homme3" class="custom-control-input">
+                                         <label class="custom-control-label" for="homme3">Homme</label>
+                                     </div>
+                                     <div class="custom-control custom-radio custom-control-inline">
+                                         <input type="radio" name="sexe" id="femme3" class="custom-control-input">
+                                         <label class="custom-control-label" for="femme3">Femme</label>
+                                     </div>
+                                 </div>
+                                 <div class="form-group row">
+                                     <label for="numero3" class="col-form-label col-sm-3">CONTACTS:</label>
+                                     <div class="col-sm-9">
+                                         <input type="tel" name="numero" id="numero3" class="form-control">
+                                     </div>
+                                 </div>
+                             </fieldset>
+                             <div class="modal-footer ">
+                                 <button type="submit" name="reserver" class="btn btn-success col-sm-3 offset-sm-3">reserver</button>
+                                 <button class="btn btn-danger col-sm-3 offset-sm-2 mr-2" data-dismiss="modal">fermer</button>
+                             </div>
+                         </form>
+                     </div>
+
+                 </div>
+             </div>
+         </div>
+     </div>
+     </div>
+
+     <div class="row mt-2">
+      <div class="col-6  col-md-3 col-lg-3">
+     <div class="card">
+       <img src="images/hautsassandra_large.jpg" class="card-img-top img-fluid">
+       <div class="card-body">
+         <p class="card-text">HAUT-SASSANDRA</p>
+         <button class=" btn btn-primary center-block" data-toggle="modal" data-target="#modalH" >Visiter</button>
+       </div> 
+      </div>
+          <div class="modal fade" id="modalH">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h1 class="h4 modal-title">RESERVATION</h1>
+                          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                      </div>
+                      <div class="modal-body">
+                          <form class="bg-warning rounded col-12 pb-2" action="site_touristique.html" method="post">
+                              <fieldset>
+                                  <legend class="text-center">Haut Sassandra</legend>
+                                  <div class="form-group row">
+                                      <label for="nomH" class="col-form-label col-sm-3">NOM:</label>
+                                      <div class="col-sm-9">
+                                          <input type="name" name="nom" class="form-control" id="nomH">
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label for="prenomH" class="col-form-label col-sm-3">PRENOM:</label>
+                                      <div class="col-sm-9">
+                                          <input type="name" name="prenom" class="form-control" id="prenomH">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="col-form-label col-sm-3">SEXE</label>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" name="sexe" id="hommeH" class="custom-control-input">
+                                          <label class="custom-control-label" for="hommeH">Homme</label>
+                                      </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" name="sexe" id="femmeH" class="custom-control-input">
+                                          <label class="custom-control-label" for="femmeH">Femme</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label for="numeroH" class="col-form-label col-sm-3">CONTACTS:</label>
+                                      <div class="col-sm-9">
+                                          <input type="tel" name="numero" id="numeroH" class="form-control">
+                                      </div>
+                                  </div>
+                              </fieldset>
+                              <div class="modal-footer">
+                                  <input type="submit" name="reserver" class="btn btn-success col-sm-3 offset-sm-3" value="reserver">
+                                  <button class="btn btn-danger col-sm-3 offset-sm-2" data-dismiss="modal">fermer</button>
+                              </div>
+                          </form>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+     </div>
+     <div class="col-6  col-md-3 col-lg-3">
+     <div class="card">
+       <img src="images/yakro_large.jpg" class="card-img-top img-fluid">
+       <div class="card-body">
+         <p class="card-text">YAMOUSSOUKRO</p>
+         <button class=" btn btn-primary center-block" data-toggle="modal" data-target="#Inscription" >Visiter</button>
+       </div> 
+      </div>
+         <div class="modal" id="Inscription" aria-labelledby="inscriptionLabel" role="dialog" tabindex="-1" aria-hidden="true">
+             <div class="modal-dialog modal-dialog-centered">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h1 class="h4 modal-title">RESERVATION</h1>
+                         <button class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                     </div>
+                     <div class="modal-body">
+                         <form class="bg-warning rounded col-12 pb-2" action="site_touristique.html" method="post">
+                             <fieldset>
+                                 <legend class="text-center">Yamoussoukro</legend>
+                                 <div class="form-group row">
+                                     <label for="nomI" class="col-form-label col-sm-3">NOM:</label>
+                                     <div class="col-sm-9">
+                                         <input type="name" name="nom" class="form-control" id="nomI">
+                                     </div>
+                                 </div>
+                                 <div class="form-group row">
+                                     <label for="prenomI" class="col-form-label col-sm-3">PRENOM:</label>
+                                     <div class="col-sm-9">
+                                         <input type="name" name="prenom" class="form-control" id="prenomI">
+                                     </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <label class="col-form-label col-sm-3">SEXE</label>
+                                     <div class="custom-control custom-radio custom-control-inline">
+                                         <input type="radio" name="sexe" id="hommeI" class="custom-control-input">
+                                         <label class="custom-control-label" for="hommeI">Homme</label>
+                                     </div>
+                                     <div class="custom-control custom-radio custom-control-inline">
+                                         <input type="radio" name="sexe" id="femmeI" class="custom-control-input">
+                                         <label class="custom-control-label" for="femmeI">Femme</label>
+                                     </div>
+                                 </div>
+                                 <div class="form-group row">
+                                     <label for="numeroI" class="col-form-label col-sm-3">CONTACTS:</label>
+                                     <div class="col-sm-9">
+                                         <input type="tel" name="numero" id="numeroI" class="form-control">
+                                     </div>
+                                 </div>
+                             </fieldset>
+                             <div class="modal-footer">
+                                 <input type="submit" name="reserver" class="btn btn-success col-sm-3 offset-sm-3" value="reserver">
+                                 <button class="btn btn-danger col-sm-3 offset-sm-2" data-dismiss="modal">fermer</button>
+                             </div>
+                         </form>
+                     </div>
+
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div class="col-6  col-md-3 col-lg-3 mt-2 mt-md-0 mt-xl-0 mt-lg-0">
+     <div class="card">
+       <img src="images/tonkpi_large.jpg" class="card-img-top img-fluid">
+       <div class="card-body">
+         <p class="card-text">TONKPI</p>
+         <button class=" btn btn-primary center-block" data-toggle="modal" data-target="#modal5" >Visiter</button>
+       </div> 
+      </div>
+
+         <div class="modal" id="modal5">
+             <div class="modal-dialog modal-dialog-centered">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h1 class="h4 modal-title">RESERVATION</h1>
+                         <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                     </div>
+                     <div class="modal-body">
+                         <form class="bg-warning rounded col-12 pb-2" action="site_touristique.html" method="post">
+                             <fieldset>
+                                 <legend class="text-center">Tonkpi</legend>
+                                 <div class="form-group row">
+                                     <label for="nom5" class="col-form-label col-sm-3">NOM:</label>
+                                     <div class="col-sm-9">
+                                         <input type="name" name="nom" class="form-control" id="nom5">
+                                     </div>
+                                 </div>
+                                 <div class="form-group row">
+                                     <label for="prenom5" class="col-form-label col-sm-3">PRENOM:</label>
+                                     <div class="col-sm-9">
+                                         <input type="name" name="prenom" class="form-control" id="prenom5">
+                                     </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <label class="col-form-label col-sm-3">SEXE</label>
+                                     <div class="custom-control custom-radio custom-control-inline">
+                                         <input type="radio" name="sexe" id="homme5" class="custom-control-input">
+                                         <label class="custom-control-label" for="homme5">Homme</label>
+                                     </div>
+                                     <div class="custom-control custom-radio custom-control-inline">
+                                         <input type="radio" name="sexe" id="femme5" class="custom-control-input">
+                                         <label class="custom-control-label" for="femme5">Femme</label>
+                                     </div>
+                                 </div>
+                                 <div class="form-group row">
+                                     <label for="numero5" class="col-form-label col-sm-3">CONTACTS:</label>
+                                     <div class="col-sm-9">
+                                         <input type="tel" name="numero" id="numero5" class="form-control">
+                                     </div>
+                                 </div>
+                             </fieldset>
+                             <div class="modal-footer ">
+                                 <button type="submit" name="reserver" class="btn btn-success col-sm-3 offset-sm-3">reserver</button>
+                                 <button class="btn btn-danger col-sm-3 offset-sm-2 mr-2" data-dismiss="modal">fermer</button>
+                             </div>
+                         </form>
+                     </div>
+
+                 </div>
+             </div>
+         </div>
+     </div> 
+      <div class="col-6 col-md-3 col-lg-3 mt-2 mt-md-0 mt-xl-0 mt-lg-0">
+     <div class="card">
+       <img src="images/bandaman_large.jpg" class="card-img-top img-fluid">
+       <div class="card-body">
+         <p class="card-text">BAMDAMA</p>
+         <button class=" btn btn-primary center-block" data-toggle="modal" data-target="#modal6" >Visiter</button>
+       </div> 
+      </div>
+
+          <div class="modal" id="modal6">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h1 class="h4 modal-title">RESERVATION</h1>
+                          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                      </div>
+                      <div class="modal-body">
+                          <form class="bg-warning rounded col-12 pb-2" action="site_touristique.html" method="post">
+                              <fieldset>
+                                  <legend class="text-center">Bandama</legend>
+                                  <div class="form-group row">
+                                      <label for="nom6" class="col-form-label col-sm-3">NOM:</label>
+                                      <div class="col-sm-9">
+                                          <input type="name" name="nom" class="form-control" id="nom6">
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label for="prenom6" class="col-form-label col-sm-3">PRENOM:</label>
+                                      <div class="col-sm-9">
+                                          <input type="name" name="prenom" class="form-control" id="prenom6">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="col-form-label col-sm-3">SEXE</label>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" name="sexe" id="homme6" class="custom-control-input">
+                                          <label class="custom-control-label" for="homme6">Homme</label>
+                                      </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" name="sexe" id="femme6" class="custom-control-input">
+                                          <label class="custom-control-label" for="femme6">Femme</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label for="numero6" class="col-form-label col-sm-3">CONTACTS:</label>
+                                      <div class="col-sm-9">
+                                          <input type="tel" name="numero" id="numero6" class="form-control">
+                                      </div>
+                                  </div>
+                              </fieldset>
+                              <div class="modal-footer ">
+                                  <button type="submit" name="reserver" class="btn btn-success col-sm-3 offset-sm-3">reserver</button>
+                                  <button class="btn btn-danger col-sm-3 offset-sm-2 mr-2" data-dismiss="modal">fermer</button>
+                              </div>
+                          </form>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+     </div>
+     </div>
+     <div class="row mt-2">
+    
+      <div class="col-6 col-md-3 col-lg-3">
+     <div class="card">
+       <img src="images/kabadougou_large.jpg" class="card-img-top img-fluid">
+       <div class="card-body">
+         <p class="card-text">KABADOUGOU</p>
+         <button class=" btn btn-primary center-block" data-toggle="modal" data-target="#modal7" >Visiter</button>
+       </div> 
+      </div>
+          <div class="modal" id="modal7">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h1 class="h4 modal-title">RESERVATION</h1>
+                          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                      </div>
+                      <div class="modal-body">
+                          <form class="bg-warning rounded col-12 pb-2" action="site_touristique.html" method="post">
+                              <fieldset>
+                                  <legend class="text-center">Kabadougou</legend>
+                                  <div class="form-group row">
+                                      <label for="nom7" class="col-form-label col-sm-3">NOM:</label>
+                                      <div class="col-sm-9">
+                                          <input type="name" name="nom" class="form-control" id="nom7">
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label for="prenom7" class="col-form-label col-sm-3">PRENOM:</label>
+                                      <div class="col-sm-9">
+                                          <input type="name" name="prenom" class="form-control" id="prenom7">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="col-form-label col-sm-3">SEXE</label>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" name="sexe" id="homme7" class="custom-control-input">
+                                          <label class="custom-control-label" for="homme7">Homme</label>
+                                      </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" name="sexe" id="femme7" class="custom-control-input">
+                                          <label class="custom-control-label" for="femme7">Femme</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label for="numero7" class="col-form-label col-sm-3">CONTACTS:</label>
+                                      <div class="col-sm-9">
+                                          <input type="tel" name="numero" id="numero7" class="form-control">
+                                      </div>
+                                  </div>
+                              </fieldset>
+                              <div class="modal-footer ">
+                                  <button type="submit" name="reserver" class="btn btn-success col-sm-3 offset-sm-3">reserver</button>
+                                  <button class="btn btn-danger col-sm-3 offset-sm-2 mr-2" data-dismiss="modal">fermer</button>
+                              </div>
+                          </form>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+
+      </div>
+     <div class="col-6 col-md-3 col-lg-3">
+     <div class="card">
+       <img src="images/sudcomoe_large.jpg" class="card-img-top img-fluid">
+       <div class="card-body">
+         <p class="card-text">SUD-COMOE</p>
+         <button class=" btn btn-primary center-block" data-toggle="modal" data-target="#modal8" >Visiter</button>
+       </div> 
+      </div>
+         <div class="modal" id="modal8">
+             <div class="modal-dialog modal-dialog-centered">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h1 class="h4 modal-title">RESERVATION</h1>
+                         <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                     </div>
+                     <div class="modal-body">
+                         <form class="bg-warning rounded col-12 pb-2" action="site_touristique.html" method="post">
+                             <fieldset>
+                                 <legend class="text-center">Sud-Comoe</legend>
+                                 <div class="form-group row">
+                                     <label for="nom8" class="col-form-label col-sm-3">NOM:</label>
+                                     <div class="col-sm-9">
+                                         <input type="name" name="nom" class="form-control" id="nom8">
+                                     </div>
+                                 </div>
+                                 <div class="form-group row">
+                                     <label for="prenom8" class="col-form-label col-sm-3">PRENOM:</label>
+                                     <div class="col-sm-9">
+                                         <input type="name" name="prenom" class="form-control" id="prenom8">
+                                     </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <label class="col-form-label col-sm-3">SEXE</label>
+                                     <div class="custom-control custom-radio custom-control-inline">
+                                         <input type="radio" name="sexe" id="homme8" class="custom-control-input">
+                                         <label class="custom-control-label" for="homme8">Homme</label>
+                                     </div>
+                                     <div class="custom-control custom-radio custom-control-inline">
+                                         <input type="radio" name="sexe" id="femme8" class="custom-control-input">
+                                         <label class="custom-control-label" for="femme8">Femme</label>
+                                     </div>
+                                 </div>
+                                 <div class="form-group row">
+                                     <label for="numero8" class="col-form-label col-sm-3">CONTACTS:</label>
+                                     <div class="col-sm-9">
+                                         <input type="tel" name="numero" id="numero8" class="form-control">
+                                     </div>
+                                 </div>
+                             </fieldset>
+                             <div class="modal-footer ">
+                                 <button type="submit" name="reserver" class="btn btn-success col-sm-3 offset-sm-3">reserver</button>
+                                 <button class="btn btn-danger col-sm-3 offset-sm-2 mr-2" data-dismiss="modal">fermer</button>
+                             </div>
+                         </form>
+                     </div>
+
+                 </div>
+             </div>
+         </div>
+     </div> 
+      <div class="col-6 col-md-3 col-lg-3 mt-2 mt-md-0 mt-xl-0 mt-lg-0">
+     <div class="card">
+       <img src="images/worodougou_large.jpg" class="card-img-top img-fluid">
+       <div class="card-body">
+         <p class="card-text">WORODOUGOU</p>
+         <button class=" btn btn-primary" data-toggle="modal" data-target="#modal9" >Visiter</button>
+       </div> 
+      </div>
+          <div class="modal" id="modal9">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h1 class="h4 modal-title">RESERVATION</h1>
+                          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                      </div>
+                      <div class="modal-body">
+                          <form class="bg-warning rounded col-12 pb-2" action="site_touristique.html" method="post">
+                              <fieldset>
+                                  <legend class="text-center">Worodougou</legend>
+                                  <div class="form-group row">
+                                      <label for="nom9" class="col-form-label col-sm-3">NOM:</label>
+                                      <div class="col-sm-9">
+                                          <input type="name" name="nom" class="form-control" id="nom9">
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label for="prenom9" class="col-form-label col-sm-3">PRENOM:</label>
+                                      <div class="col-sm-9">
+                                          <input type="name" name="prenom" class="form-control" id="prenom9">
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="col-form-label col-sm-3">SEXE</label>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" name="sexe" id="homme9" class="custom-control-input">
+                                          <label class="custom-control-label" for="homme9">Homme</label>
+                                      </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" name="sexe" id="femme9" class="custom-control-input">
+                                          <label class="custom-control-label" for="femme9">Femme</label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group row">
+                                      <label for="numero9" class="col-form-label col-sm-3">CONTACTS:</label>
+                                      <div class="col-sm-9">
+                                          <input type="tel" name="numero9" id="numero9" class="form-control">
+                                      </div>
+                                  </div>
+                              </fieldset>
+                              <div class="modal-footer ">
+                                  <button type="submit" name="reserver" class="btn btn-success col-sm-3 offset-sm-3">reserver</button>
+                                  <button class="btn btn-danger col-sm-3 offset-sm-2 mr-2" data-dismiss="modal">fermer</button>
+                              </div>
+                          </form>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+     </div>
+      <div class="col-6 col-md-3 col-lg-3 mt-2 mt-md-0 mt-xl-0 mt-lg-0">
+     <div class="card">
+       <img src="images/djuablin_large.jpg" class="card-img-top img-fluid" title="ndenie juablins">
+       <div class="card-body">
+         <p class="card-text">INDENIE-DJUABLIN</p>
+         <button class=" btn btn-primary" data-toggle="modal" data-target="#modal10" >Visiter</button>
+       </div>
+      </div> 
+     </div>
+         <div class="modal" id="modal10">
+             <div class="modal-dialog modal-dialog-centered">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h1 class="h4 modal-title">RESERVATION</h1>
+                         <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                     </div>
+                     <div class="modal-body">
+                         <form class="bg-warning rounded col-12 pb-2" action="site_touristique.html" method="post">
+                             <fieldset>
+                                 <legend class="text-center">Indenie Djuablin</legend>
+                                 <div class="form-group row">
+                                     <label for="nom10" class="col-form-label col-sm-3">NOM:</label>
+                                     <div class="col-sm-9">
+                                         <input type="name" name="nom" class="form-control" id="nom10">
+                                     </div>
+                                 </div>
+                                 <div class="form-group row">
+                                     <label for="prenom10" class="col-form-label col-sm-3">PRENOM:</label>
+                                     <div class="col-sm-9">
+                                         <input type="name" name="prenom" class="form-control" id="prenom10">
+                                     </div>
+                                 </div>
+                                 <div class="form-group">
+                                     <label class="col-form-label col-sm-3">SEXE</label>
+                                     <div class="custom-control custom-radio custom-control-inline">
+                                         <input type="radio" name="sexe" id="homme10" class="custom-control-input">
+                                         <label class="custom-control-label" for="homme10">Homme</label>
+                                     </div>
+                                     <div class="custom-control custom-radio custom-control-inline">
+                                         <input type="radio" name="sexe" id="femme10" class="custom-control-input">
+                                         <label class="custom-control-label" for="femme10">Femme</label>
+                                     </div>
+                                 </div>
+                                 <div class="form-group row">
+                                     <label for="numero10" class="col-form-label col-sm-3">CONTACTS:</label>
+                                     <div class="col-sm-9">
+                                         <input type="tel" name="numero" id="numero10" class="form-control">
+                                     </div>
+                                 </div>
+                             </fieldset>
+                             <div class="modal-footer ">
+                                 <button type="submit" name="reserver" class="btn btn-success col-sm-3 offset-sm-3">reserver</button>
+                                 <button class="btn btn-danger col-sm-3 offset-sm-2 mr-2" data-dismiss="modal">fermer</button>
+                             </div>
+                         </form>
+                     </div>
+
+                 </div>
+             </div>
+         </div>
+
+     </div>  
+     <!--contenu de modal-->
+
+</section>
+  <footer style="margin-top: 2px;">
+      <nav class="navbar navbar-expand-lg bg-dark  rounded d-flex justify-content-center">
+          <a class="navbar-text text-light">Copyright<i class=" mx-2 far fa-copyright"></i> by TourismeCi 2019-2025 </a>
+      </nav>
+  </footer>
+
+
+</body>
+</html>
